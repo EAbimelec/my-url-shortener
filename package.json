@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/EAbimelec/my-url-shortener/issues"
   },
-  "homepage": "https://github.com/EAbimelec/my-url-shortener#readme"
+  "homepage": "https://github.com/EAbimelec/my-url-shortener#readme",
+  "dependencies": {
+    "expres": "0.0.5",
+    "express": "^4.17.2"
+  }
 }
