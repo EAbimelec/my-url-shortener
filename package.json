@@ -1,9 +1,10 @@
 {
   "name": "url-shortener",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000m\u0000y\u0000-\u0000u\u0000r\u0000l\u0000-\u0000s\u0000h\u0000o\u0000r\u0000t\u0000e\u0000n\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "./node_modules/.bin/nodemon -L express_server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +19,13 @@
   },
   "homepage": "https://github.com/EAbimelec/my-url-shortener#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.6",
     "ejs": "^3.1.6",
     "expres": "0.0.5",
     "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
