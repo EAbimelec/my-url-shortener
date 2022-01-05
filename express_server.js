@@ -30,13 +30,14 @@ app.get("/urls/new", (req, res) => {
 });
 
 app.get("/urls/:shortURL", (req, res) => {
-  const sURL = req.params.shortURL.slice(1);
+  const sURL = req.params.shortURL;
+  console.log(urlDatabase[sURL]);
   const templateVars = { shortURL: req.params.shortURL, longURL: urlDatabase[sURL]};
   res.render("urls_show", templateVars);
 });
 
 app.get("/u/:shortURL", (req, res) => {
-  const sURL = req.params.shortURL.slice(1);
+  const sURL = req.params.shortURL;
   const longURL = urlDatabase[sURL];
   res.redirect(longURL);
 });
