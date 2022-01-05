@@ -67,3 +67,12 @@ app.post("/urls/:shortURL", (req, res) => {
   res.redirect("/urls");
 });
 
+app.post("/login", (req, res) => {
+
+  const username = req.body.username;
+  console.log(username);
+  res.cookie("username", username);
+  res.redirect("/urls");
+});
+
+
